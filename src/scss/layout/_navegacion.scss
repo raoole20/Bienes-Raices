@@ -1,0 +1,81 @@
+.barra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.navegacion {
+
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  transition: visibility 0.3s ease-in, opacity 0.4s linear, height 0.4s linear;
+
+    @include tablet {
+        display: flex;
+        align-items: center;
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+  }
+
+  a {
+    color: $blanco;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2.2rem;
+    display: block;
+
+    @include tablet {
+      margin-right: 2rem;
+      font-size: 1.6rem;
+      
+      &:last-of-type {
+          margin-right: 0;
+      }
+    }
+  }
+}
+
+/*Menu de amburguesa*/
+
+.mobile-menu{
+  @include tablet{
+    display: none;
+  }
+
+  img{
+    width: 5rem;
+  }
+}
+.mostrar{
+   visibility: visible;
+   opacity: 1;
+   height: auto;
+}
+
+.modoOscuro{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img{
+    width: 5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    filter: invert(100);
+
+    @include tablet{
+    align-self: flex-end;
+    }
+  }
+}

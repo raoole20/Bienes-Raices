@@ -1,0 +1,29 @@
+.darck_mode {
+  background-color: $negro;
+
+  #icono {
+    filter: invert(0);
+  }
+
+  p {
+    color: $blanco;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  a {
+    color: $gris;
+  }
+
+  .anuncio {
+    border: 1px solid $grisOscuro;
+  }
+  .contenido-anuncio {
+    background-color: $grisOscuro;
+  }
+
+  .precio {
+    color: $verde;
+  }
+}

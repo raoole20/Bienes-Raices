@@ -1,0 +1,20 @@
+//padre de todos
+@include tablet{
+    .iconos-nosotros{
+    
+        @include grid(3, 2rem);
+    }
+}
+
+//iconos idivduales hij de iconos-nosotros
+.icono{
+
+    text-align: center;
+
+    img{
+        height: 10rem;
+    }
+    h3{
+        text-transform: uppercase;
+    }
+}
